@@ -1,0 +1,45 @@
+<title>vedajs-ccapture</title>
+<style>
+  body {
+    background: #ddd;
+  }
+  canvas {
+    resize: both;
+  }
+</style>
+
+<canvas id="canvas" width="480" height="320"></canvas>
+
+<hr/>
+
+<div>
+  <label>
+    width: <input id="width" type="number" step="1" min="300" max="960" value="480"/> px
+  </label>
+  <label>
+    height: <input id="height" type="number" step="1" min="150" max="960" value="320"/> px
+  </label>
+</div>
+
+<div>
+  <label>
+    length: <input id="length" type="number" step="0.5" min="1" max="6" value="3"/> sec
+  </label>
+</div>
+
+<div>
+  <label>
+    fps: <input id="fps" type="number" step="1" min="10" max="30" value="25"/>
+  </label>
+</div>
+
+<button id="gif">Capture as GIF</button>
+<button id="webm">Capture as Webm</button>
+
+<hr/>
+
+Fragment shader:<br/>
+<textarea id="textarea"></textarea>
+
+<script src="./CCapture.all.min.js"></script>
+<script src="./bundle.js"></script>
